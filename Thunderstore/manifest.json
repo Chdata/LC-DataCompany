@@ -1,0 +1,11 @@
+{
+  "name": "DataCompany",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/Chdata/LC-DataCompany",
+  "description": "Adds new things to the game! Currently: 1 scrap",
+  "dependencies": [
+    "BepInEx-BepInExPack-5.4.2100",
+    "Evaisa-HookGenPatcher-0.0.5",
+    "Evaisa-LethalLib-0.8.0"
+  ]
+}

@@ -1,6 +1,4 @@
-﻿//#define PUBLIC_RELEASE
-
-using System.IO;
+﻿using System.IO;
 using System.Reflection;
 using BepInEx;
 using BepInEx.Configuration;
@@ -44,13 +42,13 @@ namespace DataCompanyMod
 
         private void LoadAssets()
         {
-            string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "datacompany");
+            string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "datacompany.assetbundle");
             Logger.LogDebug(path);
 
             ChdataAssetBundle = AssetBundle.LoadFromFile(path);
             if (ChdataAssetBundle == null)
             {
-                Logger.LogError("Failed to load Chdata's Assets Bundle.");
+                Logger.LogError("Failed to load Chdata's Assets Bundle. File \"datacompany.assetbundle\" belongs in the same folder as the .dll");
             }
             else
             {
@@ -60,7 +58,7 @@ namespace DataCompanyMod
             StaleBreadItem = ChdataAssetBundle.LoadAsset<Item>("Assets/Import/StaleBread/StaleBread.asset");
             if (StaleBreadItem == null)
             {
-                Logger.LogError("Failed to load Stale Bread item.");
+                Logger.LogError("Failed to load Stale Bread item. File \"datacompany.assetbundle\" belongs in the same folder as the .dll");
             }
             else
             {

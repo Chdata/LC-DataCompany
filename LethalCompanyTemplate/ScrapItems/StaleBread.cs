@@ -16,7 +16,7 @@ namespace DataCompanyMod.ScrapItems
         [HarmonyPrefix]
         private static bool OnDropAllHeldItems(PlayerControllerB __instance, bool itemsFall, bool disconnecting)
         {
-            Plugin.Logger.LogInfo("Calling OnDropAllHeldItems");
+            //Plugin.Logger.LogInfo("Calling OnDropAllHeldItems");
 
             bool foundBread = false;
 
@@ -93,7 +93,7 @@ namespace DataCompanyMod.ScrapItems
 
             if (foundBread)
             {
-                Plugin.Logger.LogInfo("Spawn New Bread 1 (true)");
+                //Plugin.Logger.LogInfo("Spawn New Bread 1 (true)");
                 __instance.StartCoroutine(SpawnBreadAtPlayer(__instance));
             }
 
@@ -104,7 +104,7 @@ namespace DataCompanyMod.ScrapItems
         [HarmonyPostfix]
         private static void OnTeleportPlayerOutWithInverseTeleporter(ShipTeleporter __instance, int playerObj, Vector3 teleportPos)
         {
-            Plugin.Logger.LogDebug("OnTeleportPlayerOutWithInverseTeleporter");
+            //Plugin.Logger.LogDebug("OnTeleportPlayerOutWithInverseTeleporter");
 
             PlayerControllerB thePlayer = StartOfRound.Instance.allPlayerScripts[playerObj];
 
@@ -115,7 +115,7 @@ namespace DataCompanyMod.ScrapItems
 
             //StartOfRound.Instance.allPlayerScripts[playerObj].TeleportPlayer(teleportPos);
 
-            Plugin.Logger.LogDebug("Try TeleportStaleBread Inverse");
+            //Plugin.Logger.LogDebug("Try TeleportStaleBread Inverse");
             //__instance.StartCoroutine(TeleportStaleBread(thePlayer));
 
             foreach (GrabbableObject grabbable in Plugin.FindObjectsOfType<GrabbableObject>())
@@ -125,7 +125,7 @@ namespace DataCompanyMod.ScrapItems
                     continue;
                 }
 
-                Plugin.Logger.LogDebug($"Inverse found bread. Player: {thePlayer.serverPlayerPosition} Tele: {teleportPos} Bread: {grabbable.transform.position}");
+                //Plugin.Logger.LogDebug($"Inverse found bread. Player: {thePlayer.serverPlayerPosition} Tele: {teleportPos} Bread: {grabbable.transform.position}");
 
                 // We can't do this because the player has already had their items dropped by the teleporter at this point.
                 //if (!PlayerHasGrabbableObjectInItemSlots(thePlayer, grabbable))
@@ -147,25 +147,25 @@ namespace DataCompanyMod.ScrapItems
 
                 DropGrabbableObjectAtPosition(grabbable, adjustedTelePos);
 
-                Plugin.Logger.LogDebug($"Inverse moved bread. Player: {thePlayer.serverPlayerPosition} Tele: {teleportPos} Bread: {grabbable.transform.position}");
+                //Plugin.Logger.LogDebug($"Inverse moved bread. Player: {thePlayer.serverPlayerPosition} Tele: {teleportPos} Bread: {grabbable.transform.position}");
             }
         }
 
         static IEnumerator SpawnBreadAtPlayer(PlayerControllerB thePlayer)
         {
-            Plugin.Logger.LogInfo("Spawn New Bread 2");
+            //Plugin.Logger.LogInfo("Spawn New Bread 2");
 
             yield return new WaitForSeconds(0.5f);
 
-            Plugin.Logger.LogInfo("Spawn New Bread 3");
+            //Plugin.Logger.LogInfo("Spawn New Bread 3");
 
             if (thePlayer.isPlayerDead)
             {
-                Plugin.Logger.LogInfo("Spawn New Bread 4 DEAD");
+                //Plugin.Logger.LogInfo("Spawn New Bread 4 DEAD");
                 yield break;
             }
 
-            Plugin.Logger.LogInfo("Spawn New Bread 4");
+            //Plugin.Logger.LogInfo("Spawn New Bread 4");
 
             CreateBreadAtLocation(thePlayer.serverPlayerPosition);
         }
@@ -173,7 +173,7 @@ namespace DataCompanyMod.ScrapItems
         // This is the bare minimum needed to spawn a new item with a value, according to RoundManager.SpawnScrapInLevel()
         public static void CreateBreadAtLocation(Vector3 spawnPos)
         {
-            Plugin.Logger.LogInfo("CreateBreadAtLocation()");
+            //Plugin.Logger.LogInfo("CreateBreadAtLocation()");
 
             // Move it a little bit above the teleporter, otherwise it spawns underneath it.
             spawnPos.y += 1f;

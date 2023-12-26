@@ -1,5 +1,9 @@
-﻿using GameNetcodeStuff;
+﻿#define PUBLIC_RELEASE
+
+#if !PUBLIC_RELEASE
+using GameNetcodeStuff;
 using HarmonyLib;
+#endif
 
 namespace DataCompanyMod.Patches
 {
