@@ -1,6 +1,6 @@
 {
   "name": "DataCompany",
-  "version_number": "1.0.1",
+  "version_number": "1.0.2",
   "website_url": "https://github.com/Chdata/LC-DataCompany",
   "description": "Adds new things to the game! Similar to LethalThings by Evaisa. Currently: 1 scrap - stale bread. Teleporter compatible!",
   "dependencies": [

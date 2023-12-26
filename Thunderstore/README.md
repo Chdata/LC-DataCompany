@@ -11,6 +11,8 @@
 # Compatibility:
 It is *unpredictable* whether or not this mod is compatible with other mods. In general, this one should not cause much issue with anything else.
 
+If another mod patches `DropAllHeldItems()` directly, it may conflict with this mod's Prefix Patch of that function.
+
 I have tested it with the following mods and everything was **a-okay**:
 
 -`BetterTelporter` by `SirTyler`
