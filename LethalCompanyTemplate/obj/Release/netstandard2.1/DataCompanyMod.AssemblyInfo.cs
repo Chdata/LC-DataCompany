@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Chdata\'s Data Company")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbb040ef168d49d51bff21ecb3d91856918992a8")]
 [assembly: System.Reflection.AssemblyProductAttribute("DataCompanyMod")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DataCompanyMod")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

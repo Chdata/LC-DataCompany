@@ -47,3 +47,4 @@ E:\Stuff\LethalCompany\MyLethalCompanyMods\DataCompany\LethalCompanyTemplate\obj
 E:\Stuff\LethalCompany\MyLethalCompanyMods\DataCompany\LethalCompanyTemplate\obj\Release\netstandard2.1\DataCompanyMod.csproj.CopyComplete
 E:\Stuff\LethalCompany\MyLethalCompanyMods\DataCompany\LethalCompanyTemplate\obj\Release\netstandard2.1\DataCompanyMod.dll
 E:\Stuff\LethalCompany\MyLethalCompanyMods\DataCompany\LethalCompanyTemplate\obj\Release\netstandard2.1\DataCompanyMod.pdb
+E:\Stuff\LethalCompany\MyLethalCompanyMods\DataCompany\LethalCompanyTemplate\obj\Release\netstandard2.1\DataCompanyMod.sourcelink.json
