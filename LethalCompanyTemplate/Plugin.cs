@@ -31,7 +31,7 @@ namespace DataCompanyMod
             Logger.LogInfo("DATA COMPANY LOADED");
             Logger.LogInfo("DATA COMPANY LOADED");
 
-            configStaleBreadRarity = Config.Bind("Settings", "Stale Bread Rarity", 30, new ConfigDescription("How rare Stale Bread is to find. Lower values = More rare. 0 to MAYBE prevent spawning. Normal range is 0-100.", new AcceptableValueRange<int>(0, 10000)));
+            configStaleBreadRarity = Config.Bind("Settings", "Stale Bread Rarity", 30, new ConfigDescription("How rare Stale Bread is to find. Lower values = More rare. 0 to MAYBE prevent spawning.", new AcceptableValueRange<int>(0, 100)));
 
             LoadAssets();
 
