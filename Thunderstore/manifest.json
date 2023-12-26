@@ -1,8 +1,8 @@
 {
   "name": "DataCompany",
-  "version_number": "1.0.0",
+  "version_number": "1.0.1",
   "website_url": "https://github.com/Chdata/LC-DataCompany",
-  "description": "Adds new things to the game! Currently: 1 scrap",
+  "description": "Adds new things to the game! Similar to LethalThings by Evaisa. Currently: 1 scrap - stale bread. Teleporter compatible!",
   "dependencies": [
     "BepInEx-BepInExPack-5.4.2100",
     "Evaisa-HookGenPatcher-0.0.5",
