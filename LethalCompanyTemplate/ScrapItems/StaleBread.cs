@@ -18,7 +18,7 @@ namespace DataCompanyMod.ScrapItems
         {
             //Plugin.Logger.LogInfo("Calling OnDropAllHeldItems");
 
-            bool foundBread = false;
+            int foundBread = 0;
 
             for (int i = 0; i < __instance.ItemSlots.Length; i++)
             {
@@ -30,7 +30,7 @@ namespace DataCompanyMod.ScrapItems
 
                 if (grabbableObject.itemProperties.itemName == "Stale bread")
                 {
-                    foundBread = true;
+                    foundBread++;
                     continue;
                 }
 
@@ -91,7 +91,7 @@ namespace DataCompanyMod.ScrapItems
             __instance.carryWeight = 1f;
             __instance.currentlyHeldObjectServer = null;
 
-            if (foundBread)
+            if (foundBread >= 4)
             {
                 //Plugin.Logger.LogInfo("Spawn New Bread 1 (true)");
                 __instance.StartCoroutine(SpawnBreadAtPlayer(__instance));
@@ -140,7 +140,7 @@ namespace DataCompanyMod.ScrapItems
                 }
 
                 Vector3 adjustedTelePos = thePlayer.serverPlayerPosition; //transform.position; <-- this never changes and is not the player's position
-                adjustedTelePos.y += 0.2f;
+                adjustedTelePos.y += 1f;
 
                 // Doing this alone will not work.
                 //grabbable.transform.position = adjustedTelePos;
