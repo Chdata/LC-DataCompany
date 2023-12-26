@@ -3,15 +3,24 @@
 
  I spent two weeks adding stale bread to this game. You better fucking love it.
 
+## Scrap items
+- Stale Bread
+	- Try collecting 4 of them!
+![Stale Bread](https://i.imgur.com/0al9gvg.png)
+
 # Compatibility:
 It is *unpredictable* whether or not this mod is compatible with other mods. In general, this one should not cause much issue with anything else.
 
-However, I have tested it with the following mods and everything was **a-okay**:
+I have tested it with the following mods and everything was **a-okay**:
 
 -`BetterTelporter` by `SirTyler`
+
 -`FasterItemDropShip` by `FlipMods`
+
 -`LethalThings` by `Evaisa`
+
 -`Antiphobia` by `Chdata`
+
 -`NecoArcHoarderBugMod` by `Chdata`
 
 # Installation Instructions
@@ -37,11 +46,6 @@ https://discord.gg/v5t3KkEdsv
 
 Thanks to `bogdanzloy20280` for the bread model!
 https://sketchfab.com/3d-models/bread-ce86584fa4e240239f6325146be7d76f#download
-
-## Scrap items
-- Stale Bread
-	- Try collecting 4 of them!
-![Stale Bread](https://i.imgur.com/c4vRIbN.png)
 
 # Updates
 	- v1.0.0
