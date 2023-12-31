@@ -52,5 +52,9 @@ Thanks to `bogdanzloy20280` for the bread model!
 https://sketchfab.com/3d-models/bread-ce86584fa4e240239f6325146be7d76f#download
 
 # Updates
+
+	- v1.0.3
+		- Updated to use Evaisa-LethalLib-0.9.0
+
 	- v1.0.0
 		- Release

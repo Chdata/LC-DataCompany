@@ -35,7 +35,7 @@
         <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Lethal Company\Lethal Company_Data\Managed\Facepunch.Steamworks.Win64.dll</HintPath>
       </Reference>
       <Reference Include="LethalLib">
-        <HintPath>..\..\..\OthersMods\LethalLib-main\LethalLib-main\Thunderstore\plugins\LethalLib\LethalLib.dll</HintPath>
+        <HintPath>..\..\..\UpdatedMods\LethalLib\Thunderstore\plugins\LethalLib\LethalLib.dll</HintPath>
       </Reference>
       <Reference Include="Unity.Netcode.Components">
         <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Lethal Company\Lethal Company_Data\Managed\Unity.Netcode.Components.dll</HintPath>

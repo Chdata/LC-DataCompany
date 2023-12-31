@@ -183,7 +183,7 @@ namespace DataCompanyMod.ScrapItems
             component.transform.rotation = Quaternion.Euler(component.itemProperties.restingRotation);
             component.fallTime = 0f;
 
-            component.scrapValue = Random.Range(2, 7);
+            component.scrapValue = Random.Range(8, 15);
             NetworkObject component2 = obj.GetComponent<NetworkObject>();
             component2.Spawn();
 
